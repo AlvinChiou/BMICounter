@@ -24,11 +24,14 @@ public class MainActivity extends Activity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Bmi BMI = new Bmi(Double.parseDouble(etHeight.getText().toString()),
+                        Double.parseDouble(etWeight.getText().toString()));
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, Result.class);
                 Bundle bundle = new Bundle();
-                bundle.putSerializable("height", etHeight.getText().toString());
-
+                bundle.putSerializable("Bmi", BMI);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }

@@ -9,7 +9,8 @@
     <string name="normal">Normal BMI</string>
     <string name="tooHeavy">Too Heavy</string>
     <string name="tooThin">Too Thin</string>
-    <string name="inputError">Error:Some values not input.</string>
+    <string name="inputError_ValuesNotInput">Error:Some values not input.</string>
+    <string name="inputError_IllegalNumberFormat">Error:Illegal Number Format.</string>
     <string name="btnSubmit">Submit</string>
     <string name="btnBack">Back</string>
 </resources>
